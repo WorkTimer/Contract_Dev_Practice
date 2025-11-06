@@ -9,5 +9,5 @@
     "skipLibCheck": true,
     "moduleResolution": "node16",
     "outDir": "dist"
-  }
+  },
 }

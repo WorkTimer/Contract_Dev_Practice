@@ -1,0 +1,7 @@
+{
+  "MetaNodeDeploy#MetaNodeStake": "0xa987eeA51e21911dC7E9709F669429FC97DfAF6C",
+  "MetaNodeDeploy#MetaNodeToken": "0xFb60D4AFE26E277568E25cb050C47b5cD945C49C",
+  "MetaNodeDeploy#ERC1967Proxy": "0xEc48ea1C4e410CC30b55d07Da6214D3fb6500413",
+  "MetaNodeDeploy#ProxyStake": "0xEc48ea1C4e410CC30b55d07Da6214D3fb6500413",
+  "MetaNodeUpgrade#MetaNodeStakeV2": "0x95C82ad34920987a561AA51b2985D964e6cA5CF6"
+}

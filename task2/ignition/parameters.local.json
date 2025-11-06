@@ -1,0 +1,8 @@
+{
+  "MetaNodeDeploy": {
+    "startBlock": "100",
+    "endBlock": "10000",
+    "metaNodePerBlock": "1000000000000000000"
+  }
+}
+
