@@ -52,3 +52,7 @@ docs/
 
 # Project specific
 **/.surfpool/
+node_modules/
+test-ledger/
+runbooks/
+txtx.yml
