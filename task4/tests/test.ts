@@ -15,7 +15,7 @@ describe("Transfer Tokens", () => {
 	const metadata = {
 		name: "Practice Token",
 		symbol: "PRAC",
-		uri: "https://raw.githubusercontent.com/solana-developers/program-examples/new-examples/tokens/tokens/.assets/spl-token.json",
+		uri: "https://raw.githubusercontent.com/WorkTimer/Contract_Dev_Practice/refs/heads/main/task4/spl-token.json",
 	};
 
 	// 生成密钥对作为代币铸造账户地址
@@ -77,6 +77,22 @@ describe("Transfer Tokens", () => {
 			.accounts({
 				sender: payer.publicKey,
 				recipient: recipient.publicKey,
+				mintAccount: mintKeypair.publicKey,
+			})
+			.rpc();
+
+		console.log("Success!");
+		console.log(`   Transaction Signature: ${transactionSignature}`);
+	});
+
+	it("Burn tokens!", async () => {
+		// 销毁数量（程序内部会转换为最小单位）
+		const amount = new BN(25);
+
+		const transactionSignature = await program.methods
+			.burnTokens(amount)
+			.accounts({
+				owner: payer.publicKey,
 				mintAccount: mintKeypair.publicKey,
 			})
 			.rpc();

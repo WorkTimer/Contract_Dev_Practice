@@ -56,3 +56,5 @@ node_modules/
 test-ledger/
 runbooks/
 txtx.yml
+
+fixtures/

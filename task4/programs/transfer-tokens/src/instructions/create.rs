@@ -26,7 +26,7 @@ pub struct CreateToken<'info> {
     pub mint_account: Account<'info, Mint>,
 
     // 元数据账户（PDA），通过 seeds 确定性生成
-    // CHECK: 通过 seeds 验证地址正确性
+    /// CHECK: 通过 seeds 验证地址正确性
     #[account(
         mut,
         seeds = [b"metadata", token_metadata_program.key().as_ref(), mint_account.key().as_ref()],

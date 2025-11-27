@@ -32,4 +32,10 @@ pub mod transfer_tokens {
     pub fn transfer_tokens(ctx: Context<TransferTokens>, amount: u64) -> Result<()> {
         transfer::transfer_tokens(ctx, amount)
     }
+
+    /// 销毁代币
+    /// 通过 CPI 调用 SPL Token 程序的 burn 指令
+    pub fn burn_tokens(ctx: Context<BurnTokens>, amount: u64) -> Result<()> {
+        burn::burn_tokens(ctx, amount)
+    }
 }
